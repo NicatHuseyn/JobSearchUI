@@ -1,0 +1,33 @@
+section{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+
+    .error-inner{
+        width: 100%;
+        padding: 200px 0;
+        text-align: center;
+
+        h1{
+            font-size: 45px;
+            margin: 10px 0;
+        }
+
+        p{
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        button{
+            width: 140px;
+            padding: 10px 0;
+            border-radius: 8px;
+            border: none;
+            background-color: blue;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+    }
+}

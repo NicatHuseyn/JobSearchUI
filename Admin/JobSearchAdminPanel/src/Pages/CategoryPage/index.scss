@@ -1,0 +1,44 @@
+section{
+    width: 100%;
+    padding: 40px 0;
+
+    .inner{
+        width: 100%;
+
+        .form-page{
+            width: 100%;
+            padding: 20px 0;
+
+           div{
+            margin: 20px 0;
+            label{
+                font-size: 14px;
+                display: block;
+                margin: 5px 0;
+            }
+            input{
+                width: 500px;
+                display: block;
+            }
+            .error{
+                font-size: 12px;
+                color: red;
+                font-weight: 500;
+                margin: 3px 0;
+            }
+           }
+            
+           div{
+            button{
+                margin: 20px 0;
+            }
+           }
+        }
+
+        .industry-table{
+            width: 100%;
+            padding: 20px 0;
+        }
+    }
+    
+}
