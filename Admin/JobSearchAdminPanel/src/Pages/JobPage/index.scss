@@ -1,0 +1,41 @@
+.home{
+    width: 100%;
+    padding: 40px 0;
+
+    .inner{
+        width: 100%;
+
+        .form{
+            width: 400px;
+            padding: 40px 0;
+
+            div{
+                margin: 10px 0;
+
+                input{
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 5px;
+                    border-radius: 10px;
+                    // border: 1px solid teal;
+                    outline: none;
+                }
+
+                textarea{
+                    resize: none;
+                }
+                label{
+                    display: inline-block;
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+
+                .select{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

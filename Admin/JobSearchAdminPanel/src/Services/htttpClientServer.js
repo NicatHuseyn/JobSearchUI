@@ -53,5 +53,6 @@ export const endpoint = {
     industries: "industries",
     jobs: "jobs",
     categories: "categories",
-    companies: "companies"
+    companies: "companies",
+    users:"users"
 }

@@ -4,9 +4,9 @@ import { MdCategory } from "react-icons/md";
 import { RiBuilding4Fill } from "react-icons/ri";
 import { BiSolidBuildings } from "react-icons/bi";
 import { FaHeart } from "react-icons/fa";
-import { IoMdMoon } from "react-icons/io";
 import { MdDashboardCustomize } from "react-icons/md";
 import { IoMdHome } from "react-icons/io";
+import { FaUser } from "react-icons/fa";
 
 import { NavLink } from "react-router-dom";
 
@@ -53,7 +53,7 @@ const Header = () => {
                 <li><NavLink>Xidmətlər</NavLink></li>
                 <li><NavLink to="/contact">Əlaqə</NavLink></li>
                 <li><NavLink><span><button><FaHeart /></button></span></NavLink></li>
-                <li><NavLink><span><button><IoMdMoon /></button></span></NavLink></li>
+                <li><NavLink to="/add-user"><span><button><FaUser /></button></span></NavLink></li>
               </ul>
             </div>
           </div>

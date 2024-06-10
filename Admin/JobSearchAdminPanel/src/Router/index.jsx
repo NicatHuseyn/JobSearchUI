@@ -1,8 +1,5 @@
 import {
   createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import AdminLayout from "../Pages";
 import Home from "../Pages/HomePage";
@@ -13,6 +10,8 @@ import Category from "../Pages/CategoryPage";
 import Job from "../Pages/JobPage";
 import Contact from "../Pages/ContactPage";
 import ErrorPage from "../Pages/ErrorPage";
+import AddUser from "../Pages/AddUserPage";
+import LoginPage from "../Pages/LoginPage";
 
 export const router = createBrowserRouter([
   {
@@ -48,9 +47,17 @@ export const router = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: "add-user",
+        element: <AddUser />,
+      },
+      {
         path: "*",
         element: <ErrorPage />,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
   },
 ]);

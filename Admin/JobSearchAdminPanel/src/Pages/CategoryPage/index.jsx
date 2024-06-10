@@ -17,34 +17,26 @@ import {
   getAllData,
   updateData,
 } from "../../Services/htttpClientServer";
-import {
-  deleteDataById,
-  endpoint,
-} from "../../Services/industryService";
+import { deleteDataById, endpoint } from "../../Services/industryService";
 // modal for update page
-
-
-
-
-
 
 const Category = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     getAllData(endpoint.companies)
-    .then((res) => {
-      if (res.data && res.data.length > 0) {
-        setData(res.data);
-      } else {
-        setData([]);
-        toast.error("No company data found");
-      }
-    })
-    .catch((error) => {
-      console.error("Error fetching data:", error);
-      toast.error("Error fetching company data");
-    });
+      .then((res) => {
+        if (res.data && res.data.length > 0) {
+          setData(res.data);
+        } else {
+          setData([]);
+          toast.error("No company data found");
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+        toast.error("Error fetching company data");
+      });
   }, []);
 
   //!   CRUD Mehtods Delete Update  \\\\\
@@ -205,8 +197,6 @@ const Category = () => {
 
   //? Table Configuration End
 
-
-
   //? Code for antd modal page //
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -306,7 +296,7 @@ const Category = () => {
           {/* code for modal */}
           <div className="modal">
             <Modal
-              title="Update Industry Data"
+              title="Update Category Data"
               open={isModalOpen}
               onOk={handleOk}
               onCancel={handleCancel}

@@ -27,13 +27,18 @@ const Industry = () => {
   const [industry, setIndustry] = useState([]);
 
   useEffect(() => {
-    getAllData("industries")
+    getAllData(endpoint.industries)
       .then((res) => {
-        setIndustry(res.data);
+        if (res.data && res.data.length > 0) {
+          setIndustry(res.data);
+        } else {
+          setIndustry([]);
+          toast.error("No company data found");
+        }
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        toast.error("Error fetching industry data");
+        toast.error("Error fetching company data");
       });
   }, []);
 
@@ -187,7 +192,7 @@ const Industry = () => {
   ////////////////////////  Table configuration /////////////////////////////
 
   function renderTable() {
-    getAllData(endpoint.companies)
+    getAllData(endpoint.industries)
       .then((res) => {
         if (res.data && res.data.length > 0) {
           setIndustry(res.data);
